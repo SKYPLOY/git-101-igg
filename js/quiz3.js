@@ -8,7 +8,12 @@ const CalculateGrade = (scoer) => {
         grade = "C"
     } else if(scoer >= 51 && scoer <= 60){
         grade = "D"
-    } else if(scoer >= 41 && scoer <= 50){
-        grade = "A"
-    } else if()
+    } else if(scoer >= 0 && scoer <= 50){
+        grade = "F"
+    } else {
+        grade ="Scoer was invalid"
+    }
+    return grade
 }
+
+console.log(CalculateGrade(81))
